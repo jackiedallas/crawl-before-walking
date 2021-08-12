@@ -38,4 +38,6 @@ if (premiumMember === false) {
     console.log("The customer is a premium member.")
 }
 
+var courseLength = prompt("How long is the Codeup course?")
+    console.log("The Codeup course length is " + courseLength + ".");
 

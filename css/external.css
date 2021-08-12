@@ -1,3 +1,10 @@
+body {
+    background-color: black;
+    color: chartreuse;
+}
+
 h1 {
     color: darkorange;
+    font-weight: bold;
+    text-align: center;
 }
