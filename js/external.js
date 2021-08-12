@@ -38,6 +38,27 @@ if (premiumMember === false) {
     console.log("The customer is a premium member.")
 }
 
-var courseLength = prompt("How long is the Codeup course?")
-    console.log("The Codeup course length is " + courseLength + ".");
+var littleM = prompt("How many days do you want to rent Little Mermaid?");
+    console.log("The customer wants to rent The Little Mermaid for " + littleM + " days.");
+var brotherB = prompt("How many days do you want to rent Brother Bear?");
+    console.log("The customer wants to rent Brother Bear for " + brotherB + " days.");
+var hercules = prompt("How many days do you want to rent Hercules?");
+    console.log("The customer wants to rent Hercules for " + hercules + " days.");
+
+var finalTotal = (littleM * 3) + (brotherB * 3) + (hercules * 3);
+alert("Your total is $" + finalTotal + ".");
+console.log("The customer's total price is $" + finalTotal + ".");
+
+var google = prompt("How many hours did you work at Google this week?");
+    console.log("User worked at Google " + google + " hours this week.");
+
+var amazon = prompt("How many hours did you work at Amazon this week?");
+    console.log("User worked at Amazon " + amazon + " hours this week.");
+
+var facebook = prompt("How many hours did you work at Facebook this week?");
+    console.log("User worked at Facebook " + facebook + " hours this week.");
+
+var totalPay = (google * 400) + (amazon * 380) + (facebook * 350);
+alert("Your total pay for this week is $" + totalPay + "!");
+console.log("User's total pay is $" + totalPay + " this week!" );
 
