@@ -62,3 +62,5 @@ var totalPay = (google * 400) + (amazon * 380) + (facebook * 350);
 alert("Your total pay for this week is $" + totalPay + "!");
 console.log("User's total pay is $" + totalPay + " this week!" );
 
+
+
