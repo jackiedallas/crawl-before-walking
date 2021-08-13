@@ -8,8 +8,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name) {
-    //var name = "jackie"
-    return "Hello " + name;
+	//var name = "jackie"
+	return "Hello " + name;
 }
 
 /**
@@ -31,9 +31,10 @@ console.log(helloMessage);
  */
 var myName = "Jackie"
 console.log(sayHello(myName));
+
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 500) + 1);
 
 /**
  * TODO:
@@ -53,9 +54,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(x) {
-    return x === 2;
+	console.log("Our number is: " + x)
+	return x === 2;
 }
 console.log(isTwo(random));
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -67,10 +70,11 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip (x, y) {
-    var total = x * y;
-    return total.toFixed(2);
+function tip (x, y) {
+	var total = x * y;
+	return total.toFixed(2);
 }
+console.log(tip(.2, 30));
 
 /**
  * TODO:
@@ -78,13 +82,16 @@ function calculateTip (x, y) {
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-alert("Your bill total was $" + random);
-var tipPercent = prompt("What percentage would you like to tip?");
-console.log("Customer tipped " + tipPercent + "%")
-var totalTip = Number(tipPercent) / 100;
-var total = ((totalTip * random) + random);
-confirm("Your total is $" + total.toFixed(2));
-console.log("Customer total is $" + total.toFixed(2));
+function calculateTip() {
+	alert("Your bill total was $" + random);
+	var tipPercent = prompt("What percentage would you like to tip?");
+	console.log("Customer tipped " + tipPercent + "%")
+	var totalTip = Number(tipPercent) / 100;
+	var total = ((totalTip * random) + random);
+	confirm("Your total is $" + total.toFixed(2));
+	console.log("Customer total is $" + total.toFixed(2));
+}
+calculateTip();
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -100,16 +107,103 @@ console.log("Customer total is $" + total.toFixed(2));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount() {
-    var price = 500;
-    var discount = .5;
-    var newPrice = price * discount;
-    return newPrice;
+	var price = random;
+	var discount = .5;
+	var newPrice = price * discount;
+	return "Discounted price is $" + newPrice.toFixed(2);
 }
+console.log("Calculating discounted price...")
 console.log(applyDiscount());
 
 
-
-
+// // Make a function called returnTwo() that returns the number 2 when called
+// function returnTwo() {
+// 	return 2;
+// }
+//
+// // Test this function with console.log(returnTwo())
+// console.log(returnTwo());
+//
+// //     Make a function called sayHowdy() which console.logs the string “Howdy!”
+// function sayHowdy() {
+// 	console.log("Howdy!");
+// }
+//
+// //     Test this function by directly calling sayHowdy()
+// sayHowdy();
+// // Remember this function does not need a defined return value
+//
+// // Make a function called returnName() that returns the string of your name
+// function returnName() {
+// 	return "Jackie";
+// }
+//
+// // Test this function with console.log(returnName())
+// console.log(returnName());
+//
+// //     Make a function called addThree() which takes in a number input and returns the number plus 3.
+// function addThree(x) {
+// 	return x + 3;
+// }
+//
+// // Test this function with console.log(addThree(5))
+// console.log(addThree(5));
+//
+// //     Make a function called sayString() which returns the string input passed in.
+// function sayString(string) {
+// 	return string;
+// }
+//
+// // Test this function with console.log(sayString('codeup'))
+// console.log(sayString("Codeup"));
+//
+// //     Challenge Function Drills
+// // Write a function called identity(input) that takes in an argument called input and returns that input.
+// function identity(input) {
+// 	return input;
+// }
+//
+// //     Write a function called getRandomNumber(min, max) that returns a random number between min and max values sent to that function call.
+// function getRandomNumber(min, max) {
+//
+// }
+// // Write a function called first(input) that returns the first character in the provided string.
+// function first (input) {
+// 	var firstCh = input.charAt(0);
+// 	return firstCh;
+// }
+// console.log(first('Codeup'));
+//
+// //     Write a function called last(input) that returns the last character of a string
+// function last(input) {
+// 	var lastCh = input.charAt(input.length - 1);
+// 	return lastCh;
+// }
+// console.log(last('Codeup'));
+//
+// // Write a function called rest(input) that returns everything but the first character of a string.
+// function rest(input) {
+// 	return input.substring(1, (input.length - 0));
+// }
+// console.log(rest('Codeup'));
+//
+// //     Write a function called reverse(input) that takes a string and returns it reversed.
+// function reverseCodeup(input) {
+// 	var a = input.substring(0, (input.length - 0));
+// 	return a;
+//
+// }
+// console.log(reverseCodeup('Codeup'));
+//     Write a function called isNumeric(input) that takes an input and returns a boolean if the input is numeric.
+//     Write a function called count(input) that takes in a string and returns the number of characters.
+//     Write a function called add(a, b) that returns the sum of a and b
+// Write a function called subtract(a, b) that return the difference between the two inputs.
+//     Write multiply(a, b) function that returns the product
+// Write a divide(numerator, denominator) function that returns a divided by b
+// Write a remainder(number, divisor) function that returns the remainder left over when dividing number by the divisor
+// Write the function square(a) that takes in a number and returns the number multiplied by itself.
+//     Write a function called sumOfSquares(a, b) that uses only your add() function and your square function and not + or * operators
+// Write a function called doMath(operator, a, b) that takes 3 parameters. The first parameter is the name of the math function you want to apply. a and b are the two numbers to run that function on.
 
 
 // (function () {
@@ -158,7 +252,7 @@ console.log(applyDiscount());
 //
 //     var hello = alert(statement());
 //     return hello;
-    //did not alert as expected.
+//did not alert as expected.
 // })();
 // Practice
 // function weeklyPay(x, y) {
