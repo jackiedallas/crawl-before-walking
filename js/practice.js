@@ -11,13 +11,16 @@ function inClass() {
 	}
 }
 inClass();
-// var isAWeekDay = confirm("Is it a weekday?");
-// var between9_5 = confirm("Is it between 9 AM and 5 PM?")
-// var classMeet = confirm("Are you meeting on the weekend?")
-//
-// console.log("Is Jackie in class? " + ((isAWeekDay && between9_5) || classMeet))
 
+////////////////////////////////////////////////////////////////////////////
 
+var isAWeekDay = confirm("Is it a weekday?");
+var between9_5 = confirm("Is it between 9 AM and 5 PM?")
+var classMeet = confirm("Are you meeting on the weekend?")
+
+console.log("Is Jackie in class? " + ((isAWeekDay && between9_5) || classMeet))
+
+////////////////////////////////////////////////////////////////////////////
 
 function moisterize() {
 	var isAshy = confirm("Are you ashy?")
