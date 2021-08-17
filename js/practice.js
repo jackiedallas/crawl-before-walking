@@ -184,16 +184,16 @@ function countFrom10() {
 // - incrementer change - what happens to the incrementer in once the loop has finished executing the code for a given iteration.
 
 // Once again, we can use this in a function.
-function sayHelloXtimes(num) {
-	for (num; num >= 0; num--) {
-		if (num % 5 === 0) {
-			console.log("Howdy! Our current number is " + num);
-		} else {
-			console.log("Hello! Our current number is " + num)
-		}
-	}
-}
-sayHelloXtimes(18);
+// function sayHelloXtimes(num) {
+// 	for (num; num >= 0; num--) {
+// 		if (num % 5 === 0) {
+// 			console.log("Howdy! Our current number is " + num);
+// 		} else {
+// 			console.log("Hello! Our current number is " + num)
+// 		}
+// 	}
+// }
+// sayHelloXtimes(18);
 // And we can use this with conditionals!
 
 // for (var i = 1; i < 25; i++){
@@ -205,11 +205,12 @@ sayHelloXtimes(18);
 
 // TODO: Quasar, how would we refactor the above back into a WHILE loop as we saw earlier?
 
+
 // Below is a funky example that works, but will rely on moving between different data types.
 // for (var i = "A"; i.length < 8; i = i + "A") {
-//     console.log("This is a bit of a tricky way to run a for loop, but hey, it works...");
+//     console.log("This is a bit of a tricky way to run a for loop, but hey, it works... This is what 'i' length looks like: " + i.length);
 // }
-
+// BREAK AND CONTINUE: Ways to manipulate the behavior of your loop.
 // We can get a loop to stop using break;
 
 // var x = 0;
@@ -224,7 +225,7 @@ sayHelloXtimes(18);
 // }
 
 // for (var j = 5; j < 100000; j += 5) {
-//     if (j === 25) {
+//     if (j === 10) {
 //         break;
 //     }
 //     console.log(j);
@@ -244,7 +245,7 @@ function allOddNumbersToX (x) {
 	return x;
 }
 
-// allOddNumbersToX(17);
+allOddNumbersToX(17);
 // allOddNumbersToX(18);
 
 // The above function will only log the odd numbers until the argument passed.
