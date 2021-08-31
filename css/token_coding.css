@@ -1,11 +1,3 @@
-body {
-    background-color: dimgray;
-}
-
-
-h1 {
-    font-weight: bolder;
-    color: crimson;
-    text-align: center;
-    font-size: 50px;
+.w3-card{
+    width: 200px;
 }
