@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Slabo+27px&display=swap');
+
 #business-links {
   list-style-type: none;
   padding-left: 0;
 }
 
+* {
+  font-family: 'Crimson Text', serif;
+}
+
 body {
   background-color: #FEFBF3
+  /* font-family: 'Hina Mincho', serif; */
 }
 
 hr {
@@ -17,8 +24,10 @@ hr {
 
 h1 {
   color: #79B4B7;
+  font-family: 'Slabo 27px', serif;
 }
 
 h3 {
-  color: #79B4B7;
+  color: #76508E;
+  font-family: 'Slabo 27px', serif;
 }
